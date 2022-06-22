@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
 :root {
-  --primary-color: #1abc9c;
+  --primary-color: #f72585;
   --secondary-color: #16a085;
 }
 * {
@@ -7,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   user-select: none;
 }
 body {
@@ -22,11 +24,13 @@ body {
 
 /* Title CSS */
 .title {
+  margin: 10px;
+  padding: 30px;
   background-color: var(--primary-color);
   text-align: center;
   font-size: 1.2em;
   padding-block: 0.5em;
-  color: #fff;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -39,9 +43,10 @@ body {
   gap: 0.8em;
   font-size: 16px;
   min-height: 70px;
-  padding-block: 0.6em;
-  background-color: var(--secondary-color);
+  padding-block: 2em 1.5em 2em;
+  background-color: #233d4d;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: 10px;
 }
 .navbar a {
   all: unset;
@@ -50,11 +55,12 @@ body {
   font-weight: bold;
   padding: 8px 10px;
   border-radius: 6px;
-  transition: 0.3s;
-  background-color: #1abc9c;
+  transition: 0.3s ease-in;
+  background-color: #fe7f2d;
 }
 .navbar a:hover {
-  background-color: transparent;
+  background-color: #f7b284;
+
 }
 .navbar #menu {
   width: fit-content;
@@ -62,7 +68,7 @@ body {
   border: none;
   border-radius: 4px;
   padding: 6px 8px;
-  background-color: #1abc9c;
+  background-color: #6930c3;
   color: white;
 }
 .navbar > .icon {
@@ -76,11 +82,12 @@ body {
 
 /* Center css */
 .center {
-  margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Added shadow to make page border free */
-  height: 420px;
-  width: 410px;
+  margin: 30px auto;
+  border: solid 10px #662e9b;
+  height: 520px;
+  width: 1010px;
   max-height: 731px;
+  background-color: #010c0b;
 }
 .array {
   display: flex;
@@ -92,10 +99,10 @@ body {
 }
 .cell {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex: 0.5;
   width: 0.000001%;
-  margin: 1px;
+  margin: 4px;
   background-color: #d6d6d6;
   resize: horizontal;
   position: relative;
@@ -114,8 +121,8 @@ body {
   transition: 0.5s;
 }
 .cell.current {
-  border-color: #50c5b7;
-  background-color: #50c5b7;
+  border-color: #010c0b;
+  background-color: #240046;
   color: white;
   transition: all 0.4s ease-out;
 }
@@ -125,6 +132,81 @@ body {
   color: white;
   transition: all 0.4s ease-out;
 }
+
+.card-wrapper{
+ 
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+}
+
+.center1{
+  border: solid #390099 3px;
+}
+
+#code{
+  margin-top: 10px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 270px;
+}
+
+.center1 h3{
+  font-size: 40px;
+  color:#ff0054;
+text-align: center;
+margin-top: 25px;
+font-family: poppins';
+}
+
+.center2{
+  border: solid #390099 3px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+
+section .Complexity_Containers {
+  margin-top: 20px;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 50px;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+.heading{
+  font-size: 40px;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+  font-size: 20px;
+
+}
+
+section #Info_Cont1 h3 {
+  color:#ff0054;
+}
+
+section #Info_Cont2 {
+  padding: 20px 10px;
+  font-size: 20px;
+
+}
+
+section #Info_Cont2 h3 {
+  color:#ff0054;
+}
+
 
 /* Footer CSS */
 .fa.fa-heart {
